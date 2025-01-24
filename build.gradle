@@ -19,3 +19,16 @@ dependencies {
 test {
     useTestNG()
 }
+
+task test_find_repo_ui(type: Test) {
+    useTestNG();
+    if (project.hasProperty('repo')) {
+        systemProperty 'repo', "${repo}"
+    }
+}
+
+task parallel_task(type: Test){
+useTestNG() {
+    suites 'src/test/java/parallel_test/parallel_test.xml'
+}
+}
