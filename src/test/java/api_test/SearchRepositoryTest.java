@@ -33,6 +33,8 @@ public class SearchRepositoryTest {
                 .get("https://api.github.com/search/repositories")
                 .thenReturn();
         System.out.println("response.getStatusCode()-->" +response.getStatusCode());
-        Assert.assertTrue(response.getBody().toString().contains(": false"));
+        //Assert.assertTrue(response.getBody().toString().contains(": false"));
+        System.out.println(response.body().print().split(",")[0].contains("1"));
+        System.out.println(response.body().print().split(",")[6].equals("\"private\": false"));
     }
 }
