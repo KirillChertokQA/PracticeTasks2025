@@ -1,0 +1,10 @@
+The assignment consists of two parts: Writing a test framework with some tests.
+Answering a question about automating a manual test.
+Part 1: Test Framework: ● Webpage https://github.com/ ● UI test
+1.Search for a repository
+2.Click the result of that repo from the search results
+3.Verify the repo you searched for is in search results on the page
+4.Verify the number of profile pictures in the results matches the total results
+● API t7est Using github rest API, search for that exact repository
+Requirements: 1.Verify in the response returns only 1 result (count=1) 2.Verify the repository is public
+• ProgrammingLanguage: Java • Enable running the tests from the command line, with the search query passed as an argument. • Upload the code to GitHub, including a README with instructions on how to use your tests
